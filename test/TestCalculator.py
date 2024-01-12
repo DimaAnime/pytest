@@ -1,7 +1,7 @@
 import unittest
 import  sys
-sys.path.append("C:\\Users\\1\\Desktop\\template_py_project")
-
+import os, sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from calculator import Calculator
 
