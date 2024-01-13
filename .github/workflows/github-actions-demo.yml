@@ -22,9 +22,5 @@ jobs:
           uses: actions/setup-python@v4
           with:
             python-version: '3.x'
-        - name: Set encoding
-          run: |
-            if [ "${{ runner.os }}" == "Windows" ]; then
-                chcp 65001
         - name: run test
-          run: python test/TestSelaninov.py
+          run: python -X utf8 test/TestSelaninov.py
