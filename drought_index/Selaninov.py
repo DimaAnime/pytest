@@ -14,9 +14,9 @@ def selaninov_drought_index(temperature, precipitation):
     if len(temperature) != len(precipitation):
         print("Длины списков температуры и осадков должны быть одинаковыми.")
         return None
-    elif len(precipitation)==0:
+    '''elif len(precipitation)==0:
         print("Длины списка осадков должны быть больше 0.")
-        return None
+        return None'''
 
     # Вычисление средней температуры
     avg_temperature = sum(temperature) / len(temperature)
